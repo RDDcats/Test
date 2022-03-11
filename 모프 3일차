@@ -1,0 +1,58 @@
+프로젝트 구조 설명
+java - 코드
+java(generated) - 내부코드 동작에 사용됨
+res - layout 은 GUI
+디자인탭에서 버튼 끌어놓으면 버튼이 생김
+위치를 바꾸고 싶다 = constrain설정
+
+Relative - 비례, 상대적 > 복잡해서 잘 안씀
+
+코드를 보면
+import 왼쪽 + 클릭하면 임포트문 보임
+super.oncreate맨처음 생성시 부모클래스 생성해주고
+setcontentview - 화면이 보이게 됨
+R 이라는 클래스로 컴파일해서 저장하기 때문에 R임
+(activity_main) > 엑티비티 이름으로 찾기
+
+실행후 빨간네모버튼 눌러야 백그라운드에 돌고있는게 꺼짐
+실행 오른쪽 두개는 재실행
+
+에뮬레이터는 핸드폰같다
+사진 찍고 크롬 열고 홈버튼눌러서 실행 완전종료하고
+
+export - export to Zip File > eclass 에올릴때 이렇게
+
+실습..
+버튼 생성
+android:orientation="vertical"
+<button  android:text = "@string/app_name"/>
+string.xml 로 다국어 지원
+
+버튼 코틀린 코드작성
+선언 > 임포트 > setonclick
+
+50page
+R 은 이런식으로 컴파일이 되서 있다
+id마다 번호를 부여해서 찾게된다.
+
+폴더보면
+drawable - 이미지파일
+layout - 액티비티 모아둠
+value - 설정값저장
+
+string - 문자열
+manifests - 앱의 여러 정보를 담음 (권한, 설정)
+
+gradle
+build.gradle
+local.properties
+gradle.properties
+
+여기다 어떤것들을 너어야 하는지 배울거임
+
+색변경
+theme.xml appcompect로 바꿔야 적용됨
+background 선언
+왼쪽 네모에서 커스텀 할 수 있음
+
+실습
