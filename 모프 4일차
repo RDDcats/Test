@@ -1,0 +1,77 @@
+코틀린 문법 공부
+
+변수선언 방식
+var a : Int = 100;
+var는 변수선언
+var의 데이터 형식은 선언안해줘도 동작한다.
+
+val a : Int = 100;
+val은 상수선언
+
+호기심{
+코틀린이 자바랑 문법이 1:1매칭이 되는데
+val이 상수라고해서 const인가하고 이게뭐지?해서 찾아봤음
+val 이랑 const val이 있더라고
+결론은
+val이 final var로 상수선언한거고
+const val이 staic final var로 상수선언을 한 것 같음
+}
+
+캐스팅
+var a :Int = "100".toInt()
+
+코틀린은 기본적으로 변수에 null값이 들어가지 않음
+
+if문
+if(조건){
+  // true일때 실행
+}else{
+  // false일때 실행
+}
+
+when문 (=switch문법)
+when(변수){
+  값1 -> // 실행문
+  값2 -> // 실행문
+  값3 -> // 실행문
+  
+  else -> // 어디에도 해당하지 않으면 실행 (switch-default문)
+}
+
+예제1
+when (a){
+  10, 11, 12 -> // 실행문
+  13, 14 -> // 실행문
+  15 -> // 실행문
+}
+
+예제2
+when (A){
+  In 10 .. 12 -> // 실행문
+  In 13 .. 14 -> // 실행문
+  15 -> // 실행문
+}
+
+배열
+선언
+var a = Array<데이터형식>(개수, {초깃값})
+var a = Array<데이터형식>(개수) {초깃값}
+
+선언하면서 값을 대입
+var a : IntArray = intArrayOf(1,2,3)
+
+어레이리스트
+ArrayList는 선언보다 더크게 저장가능
+Array는 정해둔 크기보다 클수없음
+
+for, whlie 문
+
+try catch
+
+string.format
+
+# 아 힘들어 집가서 수정함 ㅅㄱ 3.15 04:25
+
+
+
+
